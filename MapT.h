@@ -25,6 +25,7 @@ public:
     void Rehash(int numBuckets);
 
     T operator[](K key);
+    MapT& operator=(MapT const& other);
 
     int Size() { return numKeys; }
 
